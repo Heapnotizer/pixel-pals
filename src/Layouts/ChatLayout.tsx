@@ -16,6 +16,12 @@ export default function ChatLayout() {
     const error: any = useActionData()
     const dispatch = useAppDispatch()
     const closeSheets: boolean = useAppSelector((state) => state.closeSheets)
+    const userId: string | null = useAppSelector((state) => state.auth.userId) // null never comes since loader already makes sure user is authenticated
+
+    useEffect(() => {
+        // Only register once when component mounts
+        socket.emit('register-user', userId);
+    }, [userId]);
 
     useEffect(() => {
 

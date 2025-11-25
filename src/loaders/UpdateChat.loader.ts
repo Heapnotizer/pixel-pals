@@ -23,9 +23,7 @@ export async function loader({ params, request }: { params: any, request: Reques
         statusText: "Bad Request",
         status: 400
       }
-  
-    socket.emit('join-chat', params.id, userID);
-  
+    
     // Get the AES key of the sender and store in the store
     socket.on('encryptionKey', (encryptionKey: string) => {
   

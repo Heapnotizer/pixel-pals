@@ -2,7 +2,6 @@ import { defer } from "react-router-dom"
 import { store } from "@/rtk/store";
 import {  getChats, getContacts } from "@/lib/api";
 import { requireAuth } from "@/lib/requireAuth";
-import { socket } from "@/lib/socket";
 
 export async function loader({ request }: { request: Request }) {
     console.log("chatlayout loader..");
@@ -21,8 +20,6 @@ export async function loader({ request }: { request: Request }) {
 
     const data = getChats(token)
     const contacts = getContacts(token)
-
-    socket.emit('register-user', userId);
 
     return defer({ data: data, contacts: contacts })
 

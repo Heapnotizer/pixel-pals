@@ -25,6 +25,12 @@ export default function UpdateChat() {
   if (!id) throw new Error('Chat not found')
 
   React.useEffect(() => {
+      if (id) {
+          socket.emit('join-chat', id, currentUser);
+      }
+  }, [id, currentUser]);
+
+  React.useEffect(() => {
     if (actionData?.success) {
       setText('');
     }
