@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import MaxWidthWrapper from './MaxWidthWrapper';
 import type { ExcalidrawImperativeAPI } from "@excalidraw/excalidraw/types";
 import { Excalidraw } from "@excalidraw/excalidraw";
 import "@excalidraw/excalidraw/index.css";
@@ -90,14 +89,12 @@ const Whiteboard: React.FC = () => {
   };
 
   return (
-    <MaxWidthWrapper>
-      <div style={{ height: "500px" }}>
+      <div style={{ height: "60vh" }}>
         <Excalidraw
           excalidrawAPI={api => setExcalidrawAPI(api)}
           onChange={handleChange}
         />
       </div>
-    </MaxWidthWrapper>
   );
 };
 
