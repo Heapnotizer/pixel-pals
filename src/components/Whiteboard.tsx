@@ -89,7 +89,7 @@ const Whiteboard: React.FC = () => {
   };
 
   return (
-      <div style={{ height: "60vh" }}>
+      <div style={{ height: "80vh" }}>
         <Excalidraw
           excalidrawAPI={api => setExcalidrawAPI(api)}
           onChange={handleChange}
