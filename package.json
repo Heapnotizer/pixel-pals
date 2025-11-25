@@ -21,7 +21,7 @@
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.0.4",
     "@reduxjs/toolkit": "^2.2.5",
-    "@tldraw/sync": "^3.10.2",
+    "@tldraw/sync": "latest",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "emoji-picker-react": "^4.9.4",
@@ -36,7 +36,7 @@
     "socket.io-client": "^4.7.5",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
-    "tldraw": "^3.10.2",
+    "tldraw": "latest",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
