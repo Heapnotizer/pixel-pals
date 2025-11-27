@@ -2,6 +2,9 @@
 
 PixelPals is a feature-rich chat application built with modern web technologies, providing secure and real-time communication with end-to-end encryption. The application supports one-on-one conversations, group chats, and interactive whiteboards for collaborative work.
 
+# Demo
+https://github.com/user-attachments/assets/936905dc-d256-4ab7-933d-1d04686b3605
+
 ## Features
 
 ### Communication
